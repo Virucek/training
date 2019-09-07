@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	fmt.Printf("hello, world\n")
+	var n int
+	fmt.Scan(&n)
+	for i := 0; i < n; i++ {
+		fmt.Printf("hello, world\n")
+	}
+	duration := time.Duration(10)*time.Second
+	time.Sleep(duration)
 }
